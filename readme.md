@@ -79,7 +79,14 @@ PayPal account or sign-up for one if you are paying by credit card.
 You can also use your own Paypal account to donate.
 
 You can also donate Bitcoin, Bitcoin Cash, Dai, Ethereum, Litecoin and USD Coin.
+
 [![paypal](https://svgshare.com/i/Q0_.svg)](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=PFB6A6HLAQHC2&source=url)  [![Bitcoin](https://svgshare.com/i/PzX.svg)](https://commerce.coinbase.com/checkout/149a6235-ec7e-4d3b-a1ae-b08c4f08b4f6)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/adrijano/virtual-assistant-Alpha/)
+
+### Contributors
+
+
+[![](https://github.com/adrijano.png?size=50)](https://github.com/adrijano)[![](https://github.com/fr4nkl1n-1k3h.png?size=50)](https://github.com/fr4nkl1n-1k3h))[![](https://github.com/adityamangal1.png?size=50)](https://github.com/adityamangal1)
+
 
