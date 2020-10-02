@@ -87,6 +87,6 @@ You can also donate Bitcoin, Bitcoin Cash, Dai, Ethereum, Litecoin and USD Coin.
 ### Contributors
 
 
-[![](https://github.com/adrijano.png?size=50)](https://github.com/adrijano)[![](https://github.com/fr4nkl1n-1k3h.png?size=50)](https://github.com/fr4nkl1n-1k3h))[![](https://github.com/adityamangal1.png?size=50)](https://github.com/adityamangal1)
+[![](https://github.com/adrijano.png?size=50)](https://github.com/adrijano)  [![](https://github.com/fr4nkl1n-1k3h.png?size=50)](https://github.com/fr4nkl1n-1k3h))  [![](https://github.com/adityamangal1.png?size=50)](https://github.com/adityamangal1)
 
 
