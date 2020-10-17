@@ -109,14 +109,16 @@ def create_main_window(settings):
     right_click_menu = ['Unused', ['Settings', 'E&xit']]
 
     layout = [[sg.Menu(menu_def)],
-          [sg.Text('Welcome! I am your Virtual Assistant Alpha.', font=('Comic sans ms', 10), size=(59,1)), sg.Text('Projects Support', font=('Helvetica', 9))],
-          [sg.Text('', size=(60,1)), sg.Button('', key='paypal', size=(12,1), font=('Helvetica', 9), button_color=(sg.theme_background_color(), sg.theme_background_color()),
-                                               image_filename='paypal.png', image_size=(80, 50), image_subsample=2, border_width=0)],
+          [sg.Text('Welcome! I am your Virtual Assistant Alpha.', font=('Comic sans ms', 10), size=(54,1)), sg.Text('Projects Support', font=('Helvetica', 9))],
+          [sg.Text('', size=(49,1)), sg.Button('', key='paypal', size=(12,1), font=('Helvetica', 9), button_color=(sg.theme_background_color(), sg.theme_background_color()),
+                           image_filename='paypal.png', image_size=(80, 50), image_subsample=2, border_width=0),
+                 sg.Button('', key='bitcoin', size=(12,1), font=('Helvetica', 9), button_color=(sg.theme_background_color(), sg.theme_background_color()),
+                           image_filename='bitcoin.png', image_size=(80, 60), image_subsample=2, border_width=0)],   
           [sg.Text('Please speak.(Wake word Alpha)', font=('Comic sans ms', 8))],
           [sg.Output(size=(80, 17), key='out')]]
 
     return sg.Window('Alpha',
-                     location=(738, 268),
+                     location=(738, 258),
                      right_click_menu=right_click_menu).Layout(layout)
 
 
@@ -131,7 +133,10 @@ def main():
             window = create_main_window(settings)
         button, value = window.Read(timeout=0.1)
         statement = takeCommand().lower()
-        if (wakeWord(statement) == True):
+        if button in (None, 'Exit'):
+            break
+        
+        elif (wakeWord(statement) == True):
             print("I am ready")
             speak("I am ready")
             statement = takeCommand().lower()
@@ -348,9 +353,12 @@ def main():
 
         elif button == 'paypal':
             webbrowser.open_new_tab("https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=PFB6A6HLAQHC2&source=url")
+        
+        elif button == 'bitcoin':
+            webbrowser.open_new_tab("https://commerce.coinbase.com/checkout/149a6235-ec7e-4d3b-a1ae-b08c4f08b4f6")
 
-        elif button in (None, 'Exit'):
-            break
+
+
 
     window.close()
 
